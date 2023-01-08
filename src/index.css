@@ -1,13 +1,75 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1E1E1E;
+}
+
+.main-title {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    padding-top: 15px;
+}
+
+.advice-box {
+    background-color: #313a49;
+    height: 294px;
+    width: 480px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advice {
+    color: #e8e8e8;
+    font-size: 22px;
+    max-width: 500px;
+    margin: 10px;
+    /* height: 77px; */
+    /* width: 407px; */
+}
+
+.button {
+    border-radius: 50px;
+    padding: 0px;
+    border: none;
+    background-color: #55fcaa;
+    background-image: url("../public/images/dice-art.jpg");
+    background-size: 90% ; /* scale the image to fit the button */
+    background-position: center; /* center the image within the button */
+    background-blend-mode: darken;
+    height: 59px;
+    width: 59px;
+    /* margin-left: 60px; */
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.horizontal-line {
+    background-image: url("../public/images/horizontal-line.svg");
+    height: 50px;
+    width: 500px;
+    position: relative;
+    top: 20px;
+    left: 27px;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
